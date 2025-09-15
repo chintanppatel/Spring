@@ -18,9 +18,9 @@ class HelloControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    void helloEndpointReturnsHelloChintan() throws Exception {
+    void helloEndpointReturnsHelloOrderchoMaulik() throws Exception {
         mockMvc.perform(get("/hello"))
                .andExpect(status().isOk())
-               .andExpect(content().string("Hello Chintan"));
+               .andExpect(content().string("Hello Ordercho -Maulik"));
     }
 }
